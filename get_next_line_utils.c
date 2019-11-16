@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pray <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: acharlas <acharlas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 11:48:18 by pray              #+#    #+#             */
-/*   Updated: 2019/10/28 11:48:20 by pray             ###   ########.fr       */
+/*   Updated: 2019/11/16 16:13:13 by acharlas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+int		ft_strlen(char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
 
 int		ft_re_loop(t_data *data, int fd)
 {

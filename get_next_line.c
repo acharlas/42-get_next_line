@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pray <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: acharlas <acharlas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 11:48:11 by pray              #+#    #+#             */
-/*   Updated: 2019/10/28 11:48:12 by pray             ###   ########.fr       */
+/*   Updated: 2019/11/16 16:13:13 by acharlas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,6 @@ int		ft_init_data(t_data **data, int fd)
 	if ((data[0]->res = read(fd, data[0]->buff, BUFFER_SIZE)) < 1)
 		return (data[0]->res);
 	return (1);
-}
-
-int		ft_strlen(char *s)
-{
-	int i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
 }
 
 int		ft_realloc(int index, t_data *data, char **line)
